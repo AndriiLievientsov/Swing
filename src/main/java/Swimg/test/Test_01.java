@@ -13,7 +13,7 @@ public class Test_01 {
         Toolkit toolkit = Toolkit.getDefaultToolkit();
         Dimension dimension = toolkit.getScreenSize();
         jFrame.setBounds(dimension.width/2 - 250,dimension.height/2 - 150,500,300);
-        jFrame.setTitle("This is my App");
+        jFrame.setTitle("This is my App + ");
 
 
 
