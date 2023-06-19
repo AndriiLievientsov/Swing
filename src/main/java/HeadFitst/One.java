@@ -1,29 +1,32 @@
 package HeadFitst;
 
+class Movie {
+    String title;
+    String genre;
+    int rating;
+    void playIt(){
+        System.out.println("Проигрывание фильма");
+    }
+}
+
+
+
 public class One {
     public static void main(String[] args) {
-        int x  = 0;
-        while ( x < 4 ) {
-            if (x < 1) {
-                System.out.print("a ");
-            }
-            if (x < 1){
-                System.out.print("noise");
-            }
-            if (x == 1) {
-                System.out.print("annoys");
-            }
-            if (x > 1){
-                System.out.print("an");
-                System.out.print(" oyster");
-                x = x + 2;
-            }
-            System.out.println("");
-            x = x + 1;
+        Movie one = new Movie();
+        one.title ="Как Прогореть на Акциях";
+        one.genre = "Трагедия";
+        one.rating = -2;
+        Movie two = new Movie();
+        two.title ="Потеряный офис";
+        two.genre = "Комедия";
+        two.rating = 5;
+        two.playIt();
+        Movie three = new Movie();
+        three.title = "Байт-Клуб";
+        three.genre = "Трагедия но в целом веселая";
+        three.rating = 127;
 
-
-
-        }//while and
 
 
 
