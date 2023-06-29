@@ -62,7 +62,7 @@ public class One {
                    e2.count = e2.count + 1;
                }
                if(x>0) {
-                   e2.count = e2.count  + e1.count;
+                   e2.count = e2.count  + e1.count; // вот эта часть нужна что бы первый круг по циклу Вайл прошел и был ноль
                }
 
                 x =x + 1;
