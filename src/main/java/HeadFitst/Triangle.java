@@ -165,6 +165,23 @@ public class Triangle {
 //            area = (height + length) / 2;
 //        }
 
+// ---------------------------------------------------------------------------------
+          class Dog {
+              String name;
+              void bark(int numOfBarks) {
+                  while (numOfBarks > 0) {
+                      System.out.println("Гав");
+                      numOfBarks = numOfBarks - 1;
+                  }
+              }
+          }
+
+          Dog d = new Dog();
+          d.bark (3);
+
+
+
+
 
     }
 }
