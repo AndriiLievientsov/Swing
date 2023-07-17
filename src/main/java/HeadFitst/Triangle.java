@@ -1,7 +1,7 @@
 package HeadFitst;
 
 public class Triangle {
-      public static void main(String[] args) {
+      public void main(String[] args) {
 //        class TapeDeck {
 //            boolean canRecord = false;
 //            void playTape() {
@@ -166,24 +166,38 @@ public class Triangle {
 //        }
 
 // ---------------------------------------------------------------------------------
-          class Dog {
-              String name;
-              void bark(int numOfBarks) {
-                  while (numOfBarks > 0) {
-                      System.out.println("Гав");
-                      numOfBarks = numOfBarks - 1;
-                  }
-              }
-          }
+//          class Dog {
+//              String name;
+//              void bark(int numOfBarks) {
+//                  while (numOfBarks > 0) {
+//                      System.out.println("Гав");
+//                      numOfBarks = numOfBarks - 1;
+//                  }
+//              }
+//          }
+//
+//          Dog d = new Dog();
+//          d.bark (3);
+// ---------------------------------------------------------------------------------
 
-          Dog d = new Dog();
-          d.bark (3);
+//        int orig = 42;
+//        Triangle x = new Triangle();
+//        int y = x.go(orig);
+//          System.out.println(orig + " " + y);
+//
+//          int go (int arg) {
+//              arg = arg * 2; // метод красный бо должен быть вне  main
+//              return arg;
+//          }
+// ---------------------------------------------------------------------------------
+
 
 
 
 
 
     }
+
 }
 
 
