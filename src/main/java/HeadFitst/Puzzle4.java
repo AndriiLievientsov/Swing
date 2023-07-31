@@ -2,33 +2,33 @@ package HeadFitst;
 
 public class Puzzle4 {
     public static void main(String[] args) {
-        ___________________
-                int y = 1;
+        Puzzle4b[] obs = new Puzzle4b[6];
+        int y = 1;
         int x = 0;
         int result = 0;
         while (x < 6) {
-            _____________________________
-                    ___________________
-                    y = y *10;
-            ____________________________
+        obs[x] = new Puzzle4b();
+        obs[x].ivar = y;
+        y = y *10;
+        x = x + 1;
         }
         x = 6;
         while ( x > 0) {
-            _____________________
-                    result = result + ____________________
+         x = x - 1;
+         result = result + obs[x].doStuff(x);
         }
-        System.out.println("Результат" + result);
+        System.out.println("Результат " + result);
         }
     }
 
 
-    class ______ {
+    class Puzzle4b {
         int ivar;
-        ________  _______ doStuff (int ______) {
+        public int doStuff (int factor) {
             if (ivar > 100) {
-                return ____ ;
+                return ivar * factor;
             }else {
-                return ______________ ;
+                return ivar * (5 - factor) ;
             }
         }
     }
