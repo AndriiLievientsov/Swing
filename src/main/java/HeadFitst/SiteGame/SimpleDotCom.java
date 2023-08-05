@@ -9,7 +9,7 @@ public class SimpleDotCom {
 
     public String checkYourself (String stringGess) {
         int guess = Integer.parseInt(stringGess);
-        String result  = "Мимо";
+        String result  = "Мимо-1";
         for (int cell : locationCells ) {
             if (guess == cell) {
                 result = "Попал";
