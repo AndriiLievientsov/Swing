@@ -2,9 +2,9 @@ package HeadFitst.TestWork.Friday_03_11_23;
 import javax.sound.midi.*;
 import javax.sound.midi.Sequence;
 
-public class MiniMiniMusicApp {
+public class MiniMusicCmLine {
     public static void main(String[] args) {
-        MiniMiniMusicApp mini = new MiniMiniMusicApp();
+        MiniMusicCmLine mini = new MiniMusicCmLine();
         mini.play();
     }
     public void play() {
@@ -30,5 +30,6 @@ public class MiniMiniMusicApp {
             ex.printStackTrace();
         }
     }
+
 
 }
