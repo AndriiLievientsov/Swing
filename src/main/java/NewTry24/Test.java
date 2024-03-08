@@ -1,9 +1,10 @@
 package NewTry24;
 
+import com.sun.source.tree.IfTree;
+
 import javax.swing.*;
 import java.util.Scanner;
 import java.util.Random;
-
 
 
 public class Test {
@@ -62,8 +63,8 @@ public class Test {
 //---------------------------------------------------------------
 //        String username = JOptionPane.showInputDialog("Имя пользователя");
 //        String password = JOptionPane.showInputDialog("Пароль: ");
-//        int numberOfCows = Integer.parseInt(JOptionPane.showInputDialog("Че почем??"));
-//        double fractionOfHolsteins = Double.parseDouble(JOptionPane.showInputDialog("Голшит: "));
+////        int numberOfCows = Integer.parseInt(JOptionPane.showInputDialog("Че почем??"));
+////        double fractionOfHolsteins = Double.parseDouble(JOptionPane.showInputDialog("Голшит: "));
 //
 //        if(username != null && password != null &&
 //                (
@@ -77,6 +78,135 @@ public class Test {
 //            JOptionPane.showMessageDialog(null, "Попытайтесь еще раз..");
 //        }
 //---------------------------------------------------------------
+//        Scanner keyboard = new Scanner(System.in);
+//        System.out.println("Имя пользователя");
+//        String username = keyboard.next();
+//
+//        if (username.equals("bburd")) {
+//            System.out.println("Пароль: ");
+//            String password = keyboard.next();
+//
+//            if (password.equals("swordfish")){
+//                System.out.println("Вы в системе");
+//            }else {
+//                System.out.println("Неправельный пароль");
+//            }
+//        }else {
+//            System.out.println("Неверный Пользователей");
+//        }
+//        keyboard.close();
+//-----------------------------------------------------------------
+//        String username = JOptionPane.showInputDialog("Имя пользователя: ");
+//
+//        if (username == null) {
+//            JOptionPane.showMessageDialog(null, "Хей мало инфы!");
+//            JOptionPane.showMessageDialog(null, "НЕТ ПАРОЛЯ хули дальше");
+//        }else {
+//           JOptionPane.showMessageDialog(null, "Кулл теперь давай пароль");
+//            String password = JOptionPane.showInputDialog("Введите пароль");
+//            if (password == null) {
+//                JOptionPane.showMessageDialog(null, "Та блни, пароля нет!");
+//            }else {
+//                JOptionPane.showMessageDialog(null, "Ну вот так бы и сразу");
+//            }
+//        }
+//-------------------------------------------------------------------
+//        Scanner keyboard = new Scanner(System.in);
+//        System.out.println("Почему Эл стоит под дождем? Введите номер: ");
+//        int verse = keyboard.nextInt();
+//
+//        switch (verse) {
+//            case 1:
+//                System.out.println("Потому что дождь идет очень долго");
+//                break;
+//            case 2:
+//                System.out.println("Потому что он очень расстроен.");
+//                break;
+//            case 3:
+//                System.out.println("Потмоу что он все равно уже мокрый");
+//                break;
+//            default:
+//                System.out.println("Такой причины нет. Попытайтесь еще раз.");
+//                break;
+//        }
+//        System.out.println("OOooooo....");
+//        keyboard.close();
+//--------------------------------------------------------------------
+//        Scanner keyboard = new Scanner(System.in);
+//        System.out.print("Почему Эл плачет? " + "\n");
+//        String verse = keyboard.next();
+//        switch (verse) {
+//            case "a":
+//                System.out.println("Потому что");
+//                break;
+//            case "b":
+//                System.out.println("ШО?!");
+//                break;
+//            case "c":
+//                System.out.println("Uuuuuu");
+//                break;
+//            default:
+//                System.out.println("Default");
+//                break;
+//        }
+//        keyboard.close();
+
+//        Scanner keyboard = new Scanner(System.in);
+//
+//        System.out.print("Погнали. Какой месяц?:");
+//        String verse = keyboard.next();
+//
+//        switch (verse){
+//            case "Январь":
+//                System.out.println("Январь31 дней");
+//                break;
+//            case "Февраль":
+//                System.out.print("Месяц был высокосный?: ");
+//                Scanner keyboard2 = new Scanner(System.in);
+//                String verse2 = keyboard2.next();
+//                if (verse2.equals("да")){
+//                    System.out.println("Высокосны год 28");
+//                }else {
+//                    System.out.println("Месяц был нормальный 31 день Февраля");
+//                }
+//                break;
+//            case "Март":
+//                System.out.println("Март 31 дней");
+//                break;
+//            case "Апрель":
+//                System.out.println("Апрель 31 дней");
+//                break;
+//            case "Май":
+//                System.out.println("Май 31 дней");
+//                break;
+//            case "Июнь":
+//                System.out.println("Июнь 31 дней");
+//                break;
+//            case "Июль":
+//                System.out.println("Июль 31 дней");
+//                break;
+//            case "Авгус":
+//                System.out.println("Авгус 31 дней");
+//                break;
+//            case "Сентабрь":
+//                System.out.println("Сентабрь 31 дней");
+//
+//                break;
+//            case "Октябрь":
+//                System.out.println("Октябрь 31 дней");
+//                break;
+//            case "Ноябрь":
+//                System.out.println("Ноябрь 31 дней");
+//                break;
+//            case "Декабрь":
+//                System.out.println("Декабрь 31 дней + Новый год");
+//                break;
+//            default:
+//                System.out.println("Не хочешь как хочешь");
+//        }
+//        keyboard.close();
+// -----------------------------------------------------
+
 
 
     }
