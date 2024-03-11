@@ -206,8 +206,58 @@ public class Test {
 //        }
 //        keyboard.close();
 // -----------------------------------------------------
+//        Scanner keyboard = new Scanner(System.in);
+//
+//        int numberGuesses = 0;
+//        int randomNumber = new Random().nextInt(100) + 1;
+//        System.out.println(randomNumber);
+//
+//        System.out.println("*************");
+//        System.out.println("Добро пожаловать в игру!");
+//        System.out.println("*************");
+//        System.out.println();
+//
+//        System.out.println("Введите число от 1 до 10: ");
+//        int inputNumber = keyboard.nextInt();
+//        numberGuesses++;
+//
+//
+//        while (inputNumber != randomNumber) {
+//            System.out.println();
+//            if (inputNumber >= randomNumber) {
+//                System.out.println("Введите Меньше число");
+//            }else {
+//                System.out.println("Введите Больше число ");
+//            }
+//
+//            System.out.println("Попытайтесь еще раз...");
+//            System.out.print("Введите число от 1 до 10: ");
+//            inputNumber = keyboard.nextInt();
+//            numberGuesses++;
+//        }
+//
+//            System.out.print("Вы угадали после ");
+//            System.out.println(numberGuesses + " попыток");
+//-----------------------------------------------------------------
+        Scanner scanner = new Scanner(System.in);
 
+        int max = 0;
+        int number;
+        System.out.println("Введите число: ");
+        number = scanner.nextInt();
 
+        // Цикл продолжается, пока пользователь не введет не
+        // положительное число
+        while (number > 0) {
+            number = scanner.nextInt();
+            if (number > max) { // фиксируем максимальное числи и передаем в number
+                max = number;
+            }
+        }
+
+        // Выводим максимальное число
+        System.out.println("Наибольшее число: " + max);
 
     }
 }
+
