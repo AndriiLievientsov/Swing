@@ -239,24 +239,72 @@ public class Test {
 //            System.out.print("Вы угадали после ");
 //            System.out.println(numberGuesses + " попыток");
 //-----------------------------------------------------------------
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        int max = 0;
+//        int number;
+//        System.out.println("Введите число: ");
+//        number = scanner.nextInt();
+//
+//        // Цикл продолжается, пока пользователь не введет не
+//        // положительное число
+//        while (number > 0) {
+//            number = scanner.nextInt();
+//            if (number > max) { // фиксируем максимальное числи и передаем в number
+//                max = number;
+//            }
+//        }
+//
+//        // Выводим максимальное число
+//        System.out.println("Наибольшее число: " + max);
+//        -----------------------------------------------------------------
 
-        int max = 0;
-        int number;
-        System.out.println("Введите число: ");
-        number = scanner.nextInt();
+//        for (int count = 1; count <= 10; count++) {
+//            System.out.print("Значение счетчика равно ");
+//            System.out.print(count);
+//            System.out.print("." + "\n");
+//        }
+//        System.out.println("Достаточно");
 
-        // Цикл продолжается, пока пользователь не введет не
-        // положительное число
-        while (number > 0) {
-            number = scanner.nextInt();
-            if (number > max) { // фиксируем максимальное числи и передаем в number
-                max = number;
+//        int count = 0;
+//        System.out.println("Погнали");
+//        while (count <= 10){
+//            System.out.println("Эта херня равна " + count);
+//            count++;
+//        }
+//        int total = 0;
+//        for (int i = 0; i < 10 ; i++) {
+//            total += i;
+//        }
+//        System.out.println(total);
+//----------------------------------------------------------------
+//        Scanner keyboard = new Scanner(System.in);
+//        System.out.print("Введите число: ");
+//        int n = keyboard.nextInt();
+//        keyboard.close();
+//        int factorial = 1;
+//        for (int i = 1; i < n; i++) {
+//            factorial *= i; // factorial = factorial * i;
+//        }
+//        System.out.println("Клятый факториал от числа " + n + " равен " + factorial);
+//----------------------------------------------------------------
+//        for (int row = 0; row < 5; row++) {
+//            for (int colum = 0; colum < 5; colum++) {
+//                System.out.print(" * ");
+//            }
+//            System.out.println();
+//        }
+
+        for (int i = 0; i < 3; i++) {
+            for (int row = 0; row < 5; row++) {
+                for (int colum = 0; colum <= row; colum++) {
+                    System.out.print(" * ");
+                }
+                System.out.println();
             }
+            System.out.println("-----------------");
         }
 
-        // Выводим максимальное число
-        System.out.println("Наибольшее число: " + max);
 
     }
 }
