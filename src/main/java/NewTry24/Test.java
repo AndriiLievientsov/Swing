@@ -294,17 +294,83 @@ public class Test {
 //            }
 //            System.out.println();
 //        }
-
-        for (int i = 0; i < 3; i++) {
-            for (int row = 0; row < 5; row++) {
-                for (int colum = 0; colum <= row; colum++) {
-                    System.out.print(" * ");
-                }
-                System.out.println();
+//------------------------------------------------------------------
+//        for (int i = 0; i < 3; i++) {
+//            for (int row = 0; row < 5; row++) {
+//                for (int colum = 0; colum <= row; colum++) {
+//                    System.out.print(" * ");
+//                }
+//                System.out.println();
+//            }
+//            System.out.println("-----------------");
+//        }
+//------------------------------------------------------------------
+//        for (int verse = 0; verse <=3; verse++) {
+//            System.out.println("*******************");
+//
+//            System.out.print("Эл весь мокрый. ");
+//            System.out.println("Почему Эл мокрый? ");
+//            System.out.println("Потому что он стоит под дождем. ");
+//            System.out.println("Почему Эл стоит под дождем? ");
+//            System.out.println("Потому что он очень несчастлив. ");
+//
+//            System.out.println("------------------");
+//            switch (verse) {
+//                case 1:
+//                    System.out.println("Потмоу что дождь идет очень долго.");
+//                    break;
+//                case 2:
+//                    System.out.println("Потому что он оченб несчастлив.");
+//                    break;
+//                case 3:
+//                    System.out.println("Потому что он все равно уже мокрый");
+//                    break;
+//            }
+//
+//            switch (verse) {
+//                case 3:
+//                    System.out.println("Очень долго, очень долго...");
+//                case 2:
+//                    System.out.println("Оченьб очень несчатслив.");
+//                case 1:
+//                    System.out.println("Все равно, все равно уже мокрый.");
+//            }
+//
+//            System.out.println("Под дождемб под дождем.");
+//            System.out.println("О-ооооооооо");
+//            System.out.println();
+//        }
+//        System.out.print("Эл весь мокрый.");
+//        System.out.println("Почему Эл весь мокрый?");
+//        System.out.print("Потому что он стоит под дождем. ");
+//        System.out.println("Под дождемб под дождем.");
+//--------------------------------------------------------------------------------
+//        Scanner keyboard = new Scanner(System.in);
+//        while (true){
+//            System.out.println("Введите значение типа int: ");
+//            int i = keyboard.nextInt();
+//            if (i == 0) {
+//                break;
+//            }
+//            System.out.println(i);
+//        }
+//        System.out.println("Готово!");
+//        keyboard.close();
+//-------------------------------------------------------------------------------
+        Scanner keyboard = new Scanner (System.in);
+        while (true) {
+            System.out.println("Введите значение типа int: ");
+            int i = keyboard.nextInt();
+            if (i > 10) {
+                continue;
             }
-            System.out.println("-----------------");
+            if (i == 0) {
+                break;
+            }
+            System.out.println(i);
         }
-
+        System.out.println("Готово!");
+        keyboard.close();
 
     }
 }
