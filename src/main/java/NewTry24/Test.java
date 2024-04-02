@@ -3,8 +3,10 @@ package NewTry24;
 import com.sun.source.tree.IfTree;
 
 import javax.swing.*;
+import java.io.File;
 import java.util.Scanner;
 import java.util.Random;
+//import static java.lang.System.out;
 
 
 public class Test {
@@ -357,20 +359,72 @@ public class Test {
 //        System.out.println("Готово!");
 //        keyboard.close();
 //-------------------------------------------------------------------------------
-        Scanner keyboard = new Scanner (System.in);
-        while (true) {
-            System.out.println("Введите значение типа int: ");
-            int i = keyboard.nextInt();
-            if (i > 10) {
-                continue;
-            }
-            if (i == 0) {
-                break;
-            }
-            System.out.println(i);
-        }
-        System.out.println("Готово!");
-        keyboard.close();
+//        Scanner keyboard = new Scanner (System.in);
+//        while (true) {
+//            System.out.println("Введите значение типа int: ");
+//            int i = keyboard.nextInt();
+//            if (i > 10) {
+//                continue;
+//            }
+//            if (i == 0) {
+//                break;
+//            }
+//            System.out.println(i);
+//        }
+//        System.out.println("Готово!");
+//        keyboard.close();
+//----------------------------------------------------------------------------------------
+//        File evidence = new File ("cookedBooks.txt");
+////        try {
+////            out.println("Поиск " + evidence.getCanonicalPath());
+////        }catch (java.io.IOException e) {
+////            e.printStackTrace();
+////        }
+//
+//        Scanner keyboard = new Scanner ( System . in ) ;
+//        char reply;
+//
+//        do {
+//            out.print ("Удалить файл? (y/n) ");
+//            reply = keyboard.findWithinHorizon(".", 0).charAt(0);
+//        } while (reply != 'y' && reply != 'Y' && reply != 'n' && reply != 'N');
+//
+//        if (reply == 'y' || reply == 'Y') {
+//            out.println ( "Лaднo , удаляю." );
+//            evidence.delete () ;
+//            out.println ("Файл удален.") ;
+//            } else {
+//                out.println ("Ладно , не удаляю." );
+//            }
+//            keyboard.close () ;
+//-----------------------------------------------------------------------------------------
+
+//        Scanner keyboard = new Scanner(System.in);
+//        int numberGuesses = 0;
+//        int randomNumber = new Random().nextInt(10) + 1;
+//        System.out.println(randomNumber);
+//        System.out.println("Введите число от 1 до 10: ");
+//        int inputNumber = keyboard.nextInt();
+//        numberGuesses++;
+//
+//        do {
+//            System.out.println();
+//            System.out.println("Попытайтесь еще раз...");
+//            System.out.print("Введите целое число от 1 до 10: ");
+//            inputNumber = keyboard.nextInt();
+//            numberGuesses++;
+//        }while (inputNumber != randomNumber);
+//        System.out.println("Вы выиграли после ");
+//        System.out.println(numberGuesses + " попыток.");
+        MegaTest a = new MegaTest();
+        GigaTest b = new GigaTest();
+
+        a.name = "AAAAAA";
+        a.balance = 4.55;
+        a.address = "sssss";
+
+        System.out.println(a.name + "\n" + a.address + "\n" + a.balance + "\n" + "---------");
+        System.out.println(b.balance);
 
     }
 }
