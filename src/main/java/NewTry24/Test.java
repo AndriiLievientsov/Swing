@@ -416,15 +416,43 @@ public class Test {
 //        }while (inputNumber != randomNumber);
 //        System.out.println("Вы выиграли после ");
 //        System.out.println(numberGuesses + " попыток.");
-        MegaTest a = new MegaTest();
-        GigaTest b = new GigaTest();
+// -----------------------------------------------------------
 
-        a.name = "AAAAAA";
-        a.balance = 4.55;
-        a.address = "sssss";
+//        MegaTest a = new MegaTest();
+//        GigaTest b = new GigaTest();
+//
+//        a.name = "AAAAAA";
+//        a.balance = 4.55;
+//        a.address = "sssss";
+//
+//        System.out.println(a.name + "\n" + a.address + "\n" + a.balance + "\n" + "---------");
+//        System.out.println(b.balance);
 
-        System.out.println(a.name + "\n" + a.address + "\n" + a.balance + "\n" + "---------");
-        System.out.println(b.balance);
+        MegaTest megaTest = new MegaTest();
+        GigaTest gigaTest = new GigaTest();
+
+        megaTest.name = "A_Name";
+        megaTest.address = "A_address";
+        megaTest.balance = 55.63;
+
+        gigaTest.name = "B_name";
+        gigaTest.address = "B_address";
+        gigaTest.balance = 24.02;
+
+        System.out.print(megaTest.name);
+        System.out.print(" (");
+        System.out.print(megaTest.address);
+        System.out.print(") иммеет на счету $");
+        System.out.print(megaTest.balance + "\n");
+
+        System.out.println();
+        System.out.print(gigaTest.name);
+        System.out.print(" (");
+        System.out.print(gigaTest.address);
+        System.out.print(") имеет на счету $");
+        System.out.print(gigaTest.balance);
+
+
 
     }
 }
