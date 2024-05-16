@@ -450,7 +450,10 @@ public class Test {
         System.out.print(" (");
         System.out.print(gigaTest.address);
         System.out.print(") имеет на счету $");
+
         System.out.print(gigaTest.balance);
+//        System.out.print(gigaTest.balance);
+        //коментарий для проверки гита
 
 
 
