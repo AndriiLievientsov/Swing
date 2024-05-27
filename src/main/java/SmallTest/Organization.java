@@ -5,21 +5,21 @@ public class Organization {
     double money;
     String valuta;
     boolean isCommercial;
-    double snalogamy;
+    double profit;
 
-    public Organization(String namecompany, double money, String valuta, boolean isCommercial, double snalogamy) {
+    public Organization(String namecompany, double money, String valuta, boolean isCommercial, double profit) {
         this.namecompany = namecompany;
         this.money = money;
         this.valuta = valuta;
         this.isCommercial = isCommercial;
-        this.snalogamy = snalogamy;
+        this.profit = profit;
     }
 
     public double calculate(){
         if (isCommercial) {
-            return snalogamy * 0.10; // высчитываем налоги 10 или 2 процента от суммы
+            return profit * 0.10; // высчитываем налоги 10 или 2 процента от суммы
         }else {
-            return snalogamy * 0.02;
+            return profit * 0.02;
         }
     }
 
@@ -28,7 +28,7 @@ public class Organization {
         System.out.println("Количество денег " + money);
         System.out.println("Типа валюты " + valuta);
         System.out.println("Коммерческая: " + (isCommercial ? "Да" : "Нет"));
-        System.out.println("Размер налогов составляет " + calculate());
+        System.out.println("Сумма налога: $" + calculate());
     }
 
 

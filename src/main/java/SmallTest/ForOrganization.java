@@ -2,8 +2,8 @@ package SmallTest;
 
 public class ForOrganization {
     public static void main(String[] args) {
-        Organization orgA = new Organization("АТБ", 10, "Dollars", true, 10);
-        Organization orgB = new Organization("Silpo", 12324, "Грывень", false, 2);
+        Organization orgA = new Organization("АТБ", 105000.00, "Dollars", true, 50000.00);
+        Organization orgB = new Organization("Silpo", 12500.00, "Грывень", false, 2000.00);
 
         orgA.display();
         System.out.println();
