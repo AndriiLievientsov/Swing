@@ -2,7 +2,7 @@ package SmallTest;
 
 public class ForOrganization {
     public static void main(String[] args) {
-        Organization orgA = new Organization("АТБ", 105000.00, "Dollars", true, 50000.00);
+        Organization orgA = new Organization("АТБ", 995000.00, "Dollars", true, 75109.00);
         Organization orgB = new Organization("Silpo", 12500.00, "Грывень", false, 2000.00);
 
         orgA.display();
