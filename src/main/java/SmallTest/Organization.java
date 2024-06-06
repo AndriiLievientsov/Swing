@@ -23,6 +23,7 @@ public class Organization {
         }
     }
 
+
     public void display () {
         System.out.println("Имя " + namecompany);
         System.out.println("Количество денег " + money);
@@ -30,8 +31,6 @@ public class Organization {
         System.out.println("Коммерческая: " + (isCommercial ? "Да" : "Нет"));
         System.out.println("Сумма налога: $" + calculate());
     }
-
-
 
 
 }
