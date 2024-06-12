@@ -49,20 +49,39 @@ public class GuessingGame {
 //        myAccount.setBalance(balance);
 //        return myAccount.getName() +" (" + myAccount.getAddress() + ") имеет на счету$" + myAccount.getBalance();
 //    }
+//    public static void main(String[] args) {
+//        DummiesFrame frame = new DummiesFrame("Первое задание");
+//        frame.addRow("Название организации");
+//        frame.addRow("Годовая выручка");
+//        frame.addRow("Статус комерческая/некомерческая");
+//        frame.setButtonText("ЖМЁМ!");
+//        frame.go();
+//    }
+//
+//    public static String calculate(String name, double profit, boolean isCommercial) {
+//        Account myAccount = new Account(name, profit, isCommercial);
+//        double tax = myAccount.calculate(); // Вычисляем налог
+//
+//        return "Название фирмы " + myAccount.getName() + " В год $ " + myAccount.getProfit() + " Налоги $" + tax;
+//    }
+
     public static void main(String[] args) {
-        DummiesFrame frame = new DummiesFrame("Первое задание");
-        frame.addRow("Название организации");
-        frame.addRow("Годовая выручка");
-        frame.addRow("Статус комерческая/некомерческая");
-        frame.setButtonText("ЖМЁМ!");
+        DummiesFrame frame = new DummiesFrame("Второе задание");
+        frame.addRow("Продукт");
+        frame.addRow("Цена");
+        frame.addRow("Вес");
+        frame.addRow("Количество порций");
+        frame.addRow("Каллори");
+        frame.setButtonText("Погнали!");
         frame.go();
+
     }
 
-    public static String calculate(String name, double profit, boolean isCommercial) {
-        Account myAccount = new Account(name, profit, isCommercial);
-        double tax = myAccount.calculate(); // Вычисляем налог
-
-        return "Название фирмы " + myAccount.getName() + " В год $ " + myAccount.getProfit() + " Налоги $" + tax;
+    public static String calculate (String type, int price, float ves, int count, int kaloris) {
+        FoodClass foodClass = new FoodClass(type,price,ves,count,kaloris);
+        double tax = foodClass.calculate();
+        return  "Цена за порцию: " + foodClass.getPrice() + " Каллорий в порции: " + foodClass.getKaloris() +
+                " Цена за 100 грамм " + tax;
     }
 
 }
