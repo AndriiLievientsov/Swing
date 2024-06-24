@@ -16,5 +16,9 @@ public class DisplayOrganization {
         p2.setCommercial(true);
         p2.setProfit(5);
 
+        n1.display();
+        System.out.println();
+        p2.display();
+
     }
 }

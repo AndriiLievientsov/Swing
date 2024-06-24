@@ -10,4 +10,5 @@ public class Apartment extends PlaceToLive{
     public void setMonthlyRent(int monthlyRent) {
         MonthlyRent = monthlyRent;
     }
+
 }

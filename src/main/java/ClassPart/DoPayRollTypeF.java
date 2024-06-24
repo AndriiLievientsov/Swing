@@ -12,10 +12,21 @@ public class DoPayRollTypeF {
         System.out.println();
 
         PartTimeEmployee partTimeEmployee = new PartTimeEmployee();
+
         partTimeEmployee.setName("Стив Гордон");
         partTimeEmployee.setJobTitle("Водитель");
         partTimeEmployee.setHourlyRate(45.18);
         partTimeEmployee.cutCheck(partTimeEmployee.findPaymentAmount(10));
+        System.out.println();
+
+        PartTimeWithOver partTimeWithOver = new PartTimeWithOver();
+
+        partTimeWithOver.setName("Крис Апелиан");
+        partTimeWithOver.setJobTitle("Автор компьютерных книг");
+        partTimeWithOver.setHourlyRate(7.53);
+        partTimeWithOver.cutCheck(partTimeEmployee.findPaymentAmount(50));
+
+
 
     }
 }

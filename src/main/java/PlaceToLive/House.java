@@ -1,6 +1,6 @@
 package PlaceToLive;
 
-public class House extends PlaceToLive{
+public class House extends PlaceToLive {
     private double MonthlyRent;
     private double YearRent;
 

@@ -36,10 +36,10 @@ public class PlaceToLive {
 //        this.size = size;
 //    }
 
-    public double rentbill (int size) {
+    public double rentbill (double size) {
         return size * 5.15;
     }
-    public double houseRentbill (int size) {return  size * 74.4;}
+    public double houseRentbill (double size) {return  size * 74.4;}
     public double newRentBill () {
         return size * 5.15;
     }
