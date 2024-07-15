@@ -2,24 +2,24 @@ package Temperature;
 
 public class Temperature {
     private double number;
-    private  TempScale scale;
+    private TempScale scale;
 
-    public Temperature () {
+    public Temperature() {
         number = 0.0;
         scale = TempScale.FAHRENHEIT;
     }
 
-    public Temperature (double number) {
+    public Temperature(double number) {
         this.number = number;
         scale = TempScale.FAHRENHEIT;
     }
 
-    public Temperature (TempScale scale) {
+    public Temperature(TempScale scale) {
         number = 0.0;
         this.scale = scale;
     }
 
-    public Temperature (double number, TempScale scale) {
+    public Temperature(double number, TempScale scale) {
         this.number = number;
         this.scale = scale;
     }
@@ -32,11 +32,11 @@ public class Temperature {
         this.number = number;
     }
 
-    public  void  setScale (TempScale scale) {
+    public void setScale(TempScale scale) {
         this.scale = scale;
     }
-    public TempScale  getScale() {
+
+    public TempScale getScale() {
         return scale;
     }
-
 }

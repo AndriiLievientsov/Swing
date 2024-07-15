@@ -4,11 +4,11 @@ import java.time.LocalTime;
 
 public class AirplaneFlight {
     int numberAirplane;
-    AirportList airportStart;
-    LocalTime timeStart;
-    AirportList airportFish;
-    LocalTime timeFinish;
-    private String airportFinish;
+    public AirportList airportStart;
+    public LocalTime timeStart;
+    public AirportList airportFish;
+    public LocalTime timeFinish;
+    public String airportFinish;
 
     public AirplaneFlight(int numberAirplane, AirportList airportStart, LocalTime timeStart, AirportList airportFish, LocalTime timeFinish) {
         this.numberAirplane = numberAirplane;
