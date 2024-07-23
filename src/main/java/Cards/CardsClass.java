@@ -7,7 +7,7 @@ public class CardsClass {
     public CardsClass(int number, Cards.CardsSet cardsSet) {
 //        if (number < 1 || number > 13) {
 //            throw new IllegalArgumentException("Номер карты должен быть от 1 до 13");
-//        }  доп проверка но не обязательно в данном случае
+//        }  доп проверка но не обязательно в данном случае. Но в целом пригодится
 
         this.number = number;
         CardsSet = cardsSet;
