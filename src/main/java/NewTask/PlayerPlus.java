@@ -1,0 +1,22 @@
+package NewTask;
+
+import java.text.DecimalFormat;
+
+public class PlayerPlus extends Player{
+
+    private static  int playerCount = 0;
+    private static double totalOfAverages = .000;
+    private static DecimalFormat decFormat = new DecimalFormat();
+
+    public PlayerPlus(String name, double average) {
+        super(name, average);
+        playerCount++;
+        totalOfAverages += average;
+    }
+
+    public static String findTeamAverageString () {
+        return  decFormat.format(totalOfAverages / playerCount);
+    }
+
+
+}
