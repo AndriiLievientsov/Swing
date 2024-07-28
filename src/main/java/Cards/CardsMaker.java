@@ -10,6 +10,8 @@ public class CardsMaker {
         System.out.println( cardsClass1 + "\n" +
                             cardsClass2 + "\n" +
                             cardsClass3 + "\n" +
-                            cardsClass4);
+                            cardsClass4 + "\n");
+
+        System.out.println("Количество созданных объектов: " + CardsClass.getCount());
     }
 }

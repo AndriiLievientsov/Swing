@@ -3,6 +3,7 @@ package Cards;
 public class CardsClass {
     private final int number;
     private final CardsSet CardsSet;
+    static  int count = 0;
 
     public CardsClass(int number, Cards.CardsSet cardsSet) {
 //        if (number < 1 || number > 13) {
@@ -11,6 +12,7 @@ public class CardsClass {
 
         this.number = number;
         CardsSet = cardsSet;
+        count++;
     }
 
     @Override
@@ -34,9 +36,12 @@ public class CardsClass {
                 break;
         }
         return numberStr + " " + CardsSet.getDisplayName();
+
     }
 
-
+    public static int getCount() {
+        return count;
+    }
 
 }
 

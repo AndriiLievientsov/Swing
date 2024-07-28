@@ -1,12 +1,12 @@
 package gui3;
 
 public enum MensFear {
-    shirts("Shirt"),
-    pants("Pant"),
-    jackets("Jacket"),
-    coats("Coat"),
-    ties("Tie"),
-    shoes("Shoe");
+    shirts("Рубаха"),
+    pants("Штанци"),
+    jackets("Куртяк"),
+    coats("Кофта"),
+    ties("Ремень"),
+    shoes("Боты");
 
     private final String item;
 
