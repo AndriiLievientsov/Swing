@@ -5,6 +5,9 @@ public class Student {
     int ID;
     double GPA;
     Pro pro;
+    double x = 0;
+
+    double[] num = {59.36, 2.22, 125.1, 44.7, 555.5};
 
     public Student(String name) {
         this.name = name;
@@ -62,12 +65,16 @@ public class Student {
     }
 
     public void  printAll () {
+        for (double value : num) {
+            x += value;
+        }
+
         System.out.println(" Имя этого Гигача: " + name +
                 ", Айдишник крутыша: " + ID +
                 ", Баллы: " + GPA);
         System.out.println("-----------");
         System.out.println("Профессия: " + getPro());
-
+        System.out.println("Средний бал балыч: " + x);
     }
 
     public Pro getPro() {
