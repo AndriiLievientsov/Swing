@@ -18,7 +18,7 @@ public class TallySales {
                 total = total + sale.getPrice();
             }
         }
-
+/**/
         System.out.println(currency.format(total));
 
     }
