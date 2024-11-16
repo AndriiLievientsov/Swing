@@ -10,7 +10,7 @@ public class FoodMain {
 
         // Вычисляем среднее время приготовления для рецептов с "капустой"
         double middleTime = foodRecipes.stream()
-                .filter(foodRecipe -> foodRecipe.getMain().equalsIgnoreCase("капуста"))  // Фильтруем по ингредиенту "капуста"
+                .filter(foodRecipe -> foodRecipe.getMain().equalsIgnoreCase("Капуста"))  // Фильтруем по ингредиенту "капуста"
                 .mapToDouble(FoodRecipe::getTime)                                        // Преобразуем в DoubleStream
                 .average()                                                               // Вычисляем среднее значение
                 .orElse(0.0);                                                            // Если список пуст, возвращаем 0.0
