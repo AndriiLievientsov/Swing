@@ -9,7 +9,7 @@ public class DemoFinally {
             System.out.println("Исключение перехвачено в main");
         }
     }
-    sta0tic void doSomething () {
+    static void doSomething () {
         try {
             System.out.println(0 / 0);
         }catch (Exception e) {
