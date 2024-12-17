@@ -34,6 +34,7 @@ public class Author {
 
     // Метод для получения списка книг
     public ArrayList<Book> getBooks() {
+
         return books;
     }
 }
